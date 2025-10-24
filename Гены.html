@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор генов</title>
+    <link rel="icon" type="image/png" href="img/gen.png">
+    <link rel="stylesheet" href="Css.css" />
+</head>
+<body>
+    <header class="header">
+        <p style="text-align: center;">Сайт сделан членом ЧВК "Фант, Адмирал" - Kosta_Riko</br></br><a href="index.html">На главную страницу.</a></br></br><img src="img/flag_4.png" width="100px"/></p>
+        <div class="container_22 header-inner">
+            <nav class="nav">
+                <a href="Гены.html" style="border-bottom: 1px solid white;">Калькулятор генов<img src="img/gen.png"/></a>
+                <a href="Медицина.html">Таблица медицины<img src="img/Logo.png"/></a>
+                <a href="Оружие.html">Таблица оружия<img src="img/Security_Officer_Job_Icon.png"></a>
+            </nav>
+        </div>
+    </header>
+  <main class="container main">
+    <section id="home" class="section home">
+      <h2>Калькулятор спайки генов</h2>
+      <div class="primer_1">
+        <div><label>Качество наилучшего гена (%): </label>
+<input type="number" id="high" value=""></div>
+        <div><label>Качество гена похуже (%): </label>
+<input type="number" id="low" value=""></div>
+        <div><label><input type="checkbox" id="splicer"> Есть талант "Спайщик генов"?</label></div>
+        <div><label>навык медицины: </label>
+<input type="number" id="medicine" value=""></div>
+      </div>
+    </br></br>
+      <button onclick="calculate()">Рассчитать</button>
+      </br></br>
+      <div class="result" id="output"></div>
+      </br>
+      <div class="risk" id="output_2"></div>
+
+      <script>
+        function calculate() {
+            let high = parseFloat(document.getElementById("high").value);
+            let low = parseFloat(document.getElementById("low").value);
+            let medicine = parseFloat(document.getElementById("medicine").value);
+            let splicer = document.getElementById("splicer").checked;
+            let result = high + (0.275 * low) + 3;
+            let risk = 0.99 * high * (1 - 0.00375 * (medicine + 70));
+
+            if (splicer) result += 10; 
+
+            if (result > 100) result = 100; 
+
+            if (risk < 0) risk = 0;
+
+            document.getElementById("output").innerHTML = "Качество итогового гена: <b>" + result.toFixed(2) + "%</b>";
+            document.getElementById("output_2").innerHTML = "Вероятность загрязнение гена: <b>" + risk.toFixed(2) + "%</b>";
+        }
+        </script>
+    </section>
+
+
+    <section id="home" class="section home">
+      <h2>Калькулятор спайки комбинированного гена</h2>
+      <div class="primer_1">
+        <div><label>Качество наилучшего гена (%): </label>
+<input type="number" id="high_2" value=""></div>
+        <div><label>Качество гена похуже (%): </label>
+<input type="number" id="low_2" value=""></div>
+        <div><label><input type="checkbox" id="splicer_2"> Есть талант "Спайщик генов"?</label></div>
+        <div><label>навык медицины: </label>
+<input type="number" id="medicine_2" value=""></div>
+      </div>
+    </br></br>
+      <button onclick="calculate_2()">Рассчитать</button>
+      </br></br>
+      <div class="result_2" id="output_3"></div>
+      </br>
+      <div class="risk_2" id="output_4"></div>
+
+      <script>
+        function calculate_2() {
+            let high_2 = parseFloat(document.getElementById("high_2").value);
+            let low_2 = parseFloat(document.getElementById("low_2").value);
+            let medicine_2 = parseFloat(document.getElementById("medicine_2").value);
+            let splicer_2 = document.getElementById("splicer_2").checked;
+            let result_2 = high_2 + ((0.275 * low_2) + 3) / 2;
+            let risk_2 = 0.99 * high_2 * (1 - 0.00375 * (medicine_2 + 70));
+
+            if (splicer_2) result_2 += 10; 
+
+            if (result_2 > 100) result_2 = 100; 
+
+            if (risk_2 < 0) risk_2 = 0;
+
+            document.getElementById("output_3").innerHTML = "Качество итогового гена: <b>" + result_2.toFixed(2) + "%</b>";
+            document.getElementById("output_4").innerHTML = "Вероятность загрязнение гена: <b>" + risk_2.toFixed(2) + "%</b>";
+        }
+        </script>
+    </section> 
+
+
+    <section id="home" class="section home">
+      <h2>Калькулятор объединения генов</h2>
+      <div class="primer_1">
+        <div><label>Качество первого гена (%): </label></br>
+<input type="number" id="gen1" value=""></div>
+        <div><label>Качество второго гена (%): </label></br>
+<input type="number" id="gen2" value=""></div>
+        <div><label><input type="checkbox" id="splicer_3"> Есть талант "Спайщик генов"?</label>
+      </div></div>
+    </br></br>
+      <button onclick="calculate_3()">Рассчитать</button>
+      </br></br>
+      <div class="result_3" id="output_5"></div>
+
+      <script>
+        function calculate_3() {
+            let gen1 = parseFloat(document.getElementById("gen1").value);
+            let gen2 = parseFloat(document.getElementById("gen2").value);
+            let splicer_3 = document.getElementById("splicer_3").checked;
+            let result_3 = (gen1 + gen2) / 2;
+
+            if (splicer_3) result_3 += 10; 
+
+            if (result_3 > 100) result_3 = 100; 
+
+            document.getElementById("output_5").innerHTML = "Качество итогового гена: <b>" + result_3.toFixed(2) + "%</b>";
+        }
+        </script>
+    </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,238 @@
+
+body {
+    position: relative;
+    background-color: rgb(25, 24, 27);
+    z-index: -2;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  
+  .container_22{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  
+    padding: 0 1rem;
+  }
+  .container_21{
+  margin-left: auto;
+    margin-right: auto;
+  
+  
+  }
+  .container {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  
+    padding: 0 1rem;
+  }
+  .reg_avt{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .reg_avt a{
+    font-size: 0.75rem;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    height: 100%;
+    transition: background-color 0.3s ease;
+  }
+  .reg_avt a:hover{
+    background-color: #16211b;
+  }
+  .header {
+    position: relative;
+    top: 0px;
+    z-index: 1000;
+    width: 100%;
+    background-color: #252839;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  
+  }
+  
+  .header a{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    height: 100%;
+    transition: background-color 0.3s ease;
+  }
+  .header a:hover{
+    background-color: #161c3d;
+  }
+  .header-inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .header-inner img{
+    width: 250px;
+
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+  .dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #252839;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  padding: 0.75rem 1.5rem;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0; 
+}
+
+.dropdown-menu a:hover {
+  background-color: #252839;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+  .nav a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 1.5rem;
+  height: 100%;
+  transition: background-color 0.3s ease;
+}
+  
+  .nav a:hover {
+    background-color: #161c3d;
+  }
+  
+.nav img{
+    height: 40px;
+    width: 40px;
+  }
+
+  .main {
+    position: relative;
+    top: 3rem;
+  }
+  
+  .section {
+    background-color: #252839;
+    color: white;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .home {
+    text-align: center;
+  }
+  
+  .home h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home p {
+    color: white;
+    margin-bottom: 1.5rem;
+  }
+  .primer_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #242b50;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+th, td {
+  border: 1px solid rgb(150, 148, 148);
+  padding: 8px 5px;
+  text-align: center;
+}
+
+th {
+  background-color: #252839;
+  color: white;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  background-color: #161c3d; 
+  z-index: 10; 
+}
+
+td img {
+  height: 32px;
+  width: 32px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+tr:hover {
+  background-color: #252839;
+}
+
+.positive { color: #00cc66; }
+.negative { color: #ff3333; }
+.neutral  { color: #aaa; }
+
+button{
+  color: white;
+  background-color: #252839;
+}
+button:hover{
+  background-color: #202335
+}
+input{
+  color: white;
+  background-color: #aaa;
+}
+.gun_img img{
+  width: 70px;
+}
