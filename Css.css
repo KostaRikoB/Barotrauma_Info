@@ -326,3 +326,26 @@ input{
     font-size: 0.9rem;
   }
 }
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  background-color: #161c3d;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  display: none; /* скрыта по умолчанию */
+  transition: all 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background-color: #202855;
+  transform: scale(1.2);
+}

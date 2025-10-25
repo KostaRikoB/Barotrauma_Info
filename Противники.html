@@ -894,6 +894,26 @@
 
 
     </main>
+    <button id="scrollTopBtn" title="Наверх">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 1-.5-.5V5.707L3.854 9.354a.5.5 0 1 1-.708-.708l4.5-4.5a.5.5 0 0 1 .708 0l4.5 4.5a.5.5 0 0 1-.708.708L8.5 5.707V11.5A.5.5 0 0 1 8 12z"/>
+        </svg>
+    </button>
+    <script>
+        // Показать кнопку при прокрутке вниз
+        window.onscroll = function() {
+            const btn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+            btn.style.display = "block";
+            } else {
+            btn.style.display = "none";
+            }
+        };
 
+        // Прокрутка вверх при нажатии
+        document.getElementById("scrollTopBtn").onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
     </body>
     </html>
