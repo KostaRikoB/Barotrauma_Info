@@ -206,6 +206,9 @@ th {
   background-color: #161c3d; 
   z-index: 10; 
 }
+.th th{
+  top: 34px;
+}
 
 td img {
   height: 32px;
@@ -240,3 +243,20 @@ input{
   height: 100px;
   width: 70px;
 }
+.gun_img3 img{
+  height: 70px;
+  width: auto;
+}
+.home_2 {
+    text-align: center;
+  }
+  
+  .home_2 h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home_2 p {
+    color: white;
+    margin-bottom: 1.5rem;
+  }
