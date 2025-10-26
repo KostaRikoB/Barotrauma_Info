@@ -227,7 +227,7 @@ th {
   background-color: #252839;
   color: white;
   font-weight: bold;
-  position:relative;
+  position:static;
   top: 0;
   background-color: #161c3d; 
   z-index: 9;
@@ -294,7 +294,34 @@ input{
   }
   .table-wrapper {
   overflow-x: auto;
+  overflow-y: visible;
+  position: relative;
   -webkit-overflow-scrolling: touch;
+}
+.table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* делаем липкими именно заголовки thead */
+.table-wrapper thead th {
+  position: sticky;
+  top: 0;
+  z-index: 30;              /* достаточно большое, чтобы быть выше строк */
+  background: #161c3d;      /* фон, чтобы перекрывать строки */
+  color: #fff;
+}
+
+/* если вторая строка заголовка — она ниже первой */
+.table-wrapper thead tr.th-row th {
+  top: 36px;                /* подстраивай под высоту первой строки */
+  z-index: 29;
+}
+
+/* подтаблицы: отменяем sticky в них */
+.table-wrapper td table th,
+.table-wrapper td table thead th {
+  position: static !important;
 }
 
   @media (max-width: 768px) {
