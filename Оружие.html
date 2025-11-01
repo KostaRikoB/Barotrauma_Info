@@ -740,6 +740,532 @@
   </tr>
 </table>
         </section>
+
+        <section id="home" class="section home">
+            <h2>Метательное оружие.</h2>
+
+            <table>
+                <tr>
+                    <th>Вид оружия</th>
+                    <th>Радиус взрыва</th>
+                    <th>Время до взрыва</th>
+                    <th>Урон структурам</th>
+                    <th>Урон балластной флоре</th>
+                    <th>Урон предметам</th>
+                    <th>Поражающие факторы</th>
+                </tr>
+
+                <tr>
+                    <td class="gun_img3 tooltip"><img src="img/Frag_Grenade.png"><br><br>Осколочная граната<span class="tooltiptext">ID: fraggrenade</span></td>
+                    <td>7,5м</td>
+                    <td>3с</td>
+                    <td>20</td>
+                    <td>100</td>
+                    <td>500</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/krovotecheniye.png" width="40px">Кровотечение (100)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/krovotecheniye.png" width="40px">Кровотечение (50) (Шанс: 10%)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Deep_Tissue_Injury.png" width="40px">Травма глубоких тканей (150)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (7)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="gun_img3 tooltip"><img src="img/Stun_Grenade.png"><br><br>Светошумовая граната<span class="tooltiptext">ID: stungrenade</span></td>
+                    <td>7,5м</td>
+                    <td>3с</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Взрыв (2м):</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Deep_Tissue_Injury.png" width="40px">Травма глубоких тканей (10)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/vnutrennie_povrejdeniya.png" width="40px">Слепота (10)</td>
+                            </tr>
+                            <tr>
+                                <td>Взрыв (5м):</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (10)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/vnutrennie_povrejdeniya.png" width="40px">Слепота (25)</td>
+                            </tr>
+                            <tr>
+                                <td>Взрыв (7,5м):</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (4)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/vnutrennie_povrejdeniya.png" width="40px">Слепота (15)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="gun_img3 tooltip"><img src="img/Incendium_Grenade.png"><br><br>Граната с воспламенитом<span class="tooltiptext">ID: incendiumgrenade</span></td>
+                    <td>3м</td>
+                    <td>3с</td>
+                    <td>-</td>
+                    <td>360</td>
+                    <td>200</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/ojogi.png" width="40px">Ожоги (75)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ojogi.png" width="40px">Ожоги (15) (шанс: 20%)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Burning.png" width="40px">Горение (15)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (7)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="gun_img3 tooltip"><img src="img/Acid_Grenade.png"><br><br>Кислотная граната<span class="tooltiptext">ID: chemgrenade</span></td>
+                    <td>5м</td>
+                    <td>3с</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/Acid_Burn.png" width="40px">Ожог кислотой (30)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Acid_Burn.png" width="40px">Ожог кислотой (15) (Шанс: 20%)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (0,5)</td>
+                            </tr>
+                            <tr>
+                                <td>После взрыва создаёт 10 кислотных облачков,<br> что в течении 10 секунд будут вызывать<br> ожог кислотой и медлительность в радиусе 2м.</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="gun_img3 tooltip"><img src="img/EMP_Grenade.png"><br><br>ЭМ-граната<span class="tooltiptext">ID: empgrenade</span></td>
+                    <td>5м</td>
+                    <td>3с</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/Deep_Tissue_Injury.png" width="40px">Травма глубоких тканей (10)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (5)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Paralysis.png" width="40px">ЭМИ (100)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+            
+        </section>
+
+        <section id="home" class="section home">
+            <h2>Оружие ближнего боя.</h2>
+
+            <table>
+                <tr>
+                    <th>Вид оружия</th>
+                    <th>Размер</th>
+                    <th>Дистанция</th>
+                    <th>Скорость атаки (Ударов/с)</th>
+                    <th>Урон структурам</th>
+                    <th>Урон предметам</th>
+                    <th>Повреждения от удара</th>
+                </tr>
+
+                <tr>
+                    <td class="gun_img3 tooltip"><img src="img/Diving_Knife.png"><br><br>Нож ныряльщика<span class="tooltiptext">ID: divingknife</span></td>
+                    <td>Одноручный</td>
+                    <td>0,5м</td>
+                    <td>1,33</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/Lacerations.png" width="40px">Рваная рана (10)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/krovotecheniye.png" width="40px">Кровотечение (10)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (0,2)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="gun_img3 tooltip"><img src="img/Hardened_Diving_Knife.png"><br><br>Закалённый нож ныряльщика<span class="tooltiptext">ID: divingknifehardened</span></td>
+                    <td>Одноручный</td>
+                    <td>0,5м</td>
+                    <td>1,33</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/Lacerations.png" width="40px">Рваная рана (15)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/krovotecheniye.png" width="40px">Кровотечение (5)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (0,2)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Radiation_Sickness.png" width="40px">Лучевая болезнь (1)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="gun_img3 tooltip"><img src="img/Europan_Handshake.png"><br><br>Рукопожатие Европы<span class="tooltiptext">ID: divingknifeunique</span></td>
+                    <td>Одноручный</td>
+                    <td>0,5м</td>
+                    <td>1,33</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/Lacerations.png" width="40px">Рваная рана (10)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/krovotecheniye.png" width="40px">Кровотечение (10)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (0,2)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/logo_poison.png" width="40px">Отравление морбузином (4)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="gun_img3 tooltip"><img src="img/Stun_Baton.png"><br><br>Шоковая дубинка<span class="tooltiptext">ID: stunbaton</span></td>
+                    <td>Одноручный</td>
+                    <td>1м</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>1</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Без аккумулятора:</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Blunt_Force_Trauma.png" width="40px">Тупая травма (4)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (0,2)</td>
+                            </tr>
+                            <tr>
+                                <td>С обычным аккумулятором:</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Blunt_Force_Trauma.png" width="40px">Тупая травма (4)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (0,5)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Zapped.png" width="40px">Удар током (45)</td>
+                            </tr>
+                            <tr>
+                                <td>С грозовиевым аккумулятором:</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Blunt_Force_Trauma.png" width="40px">Тупая травма (4)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (0,5)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Zapped.png" width="40px">Удар током (60)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="gun_img3 tooltip"><img src="img/Boarding_Axe.png"><br><br>Абордажный топор<span class="tooltiptext">ID: boardingaxe</span></td>
+                    <td>Двуручный</td>
+                    <td>1,55м</td>
+                    <td>0,83</td>
+                    <td>25</td>
+                    <td>30</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/Lacerations.png" width="40px">Рваная рана (36)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/krovotecheniye.png" width="40px">Кровотечение (10)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (0,5)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="img_7 tooltip"><img src="img/Ceremonial_Sword.png" height="40px" width="auto"><br><br>Церемониальный меч<span class="tooltiptext">ID: ceremonialsword</span></td>
+                    <td>Одноручный</td>
+                    <td>0,75м</td>
+                    <td>1,92</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/Lacerations.png" width="40px">Рваная рана (19)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/krovotecheniye.png" width="40px">Кровотечение (14)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (0,25)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="gun_img3 tooltip"><img src="img/Husk_Stinger.png"><br><br>Жало хаска<span class="tooltiptext">Да, несмотря на его вид и происхождение, он не заражает хаском.<br>ID: huskstinger</span></td>
+                    <td>Одноручный</td>
+                    <td>0,5м</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/Lacerations.png" width="40px">Рваная рана (5)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/krovotecheniye.png" width="40px">Кровотечение (10)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (0,2)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="img_7 tooltip"><img src="img/Heavy_Wrench.png"><br><br>Тяжелый гаечный ключ<span class="tooltiptext">ID: heavywrench</span></td>
+                    <td>Двуручный</td>
+                    <td>1м</td>
+                    <td>0,91</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/Blunt_Force_Trauma.png" width="40px">Тупая травма (25)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (1)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="gun_img3 tooltip"><img src="img/Crowbar.png"><br><br>Лом<span class="tooltiptext">ID: crowbar</span></td>
+                    <td>Двуручный</td>
+                    <td>1м</td>
+                    <td>1</td>
+                    <td>12</td>
+                    <td>8</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/Blunt_Force_Trauma.png" width="40px">Тупая травма (10)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (0,5)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="gun_img3 tooltip"><img src="img/Hardened_Crowbar.png"><br><br>Закаленный лом<span class="tooltiptext">ID: crowbarhardened</span></td>
+                    <td>Двуручный</td>
+                    <td>1м</td>
+                    <td>1</td>
+                    <td>12</td>
+                    <td>8</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/Blunt_Force_Trauma.png" width="40px">Тупая травма (18)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (0,6)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Radiation_Sickness.png" width="40px">Лучевая болезнь (1)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="gun_img3 tooltip"><img src="img/Wrench.png"><br><br>Гаечный ключ<span class="tooltiptext">ID: wrench</span></td>
+                    <td>Одноручный</td>
+                    <td>0,5м</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>2</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/Blunt_Force_Trauma.png" width="40px">Тупая травма (4)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (0,2)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="gun_img3 tooltip"><img src="img/Hardened_Wrench.png"><br><br>Закаленный гаечный ключ<span class="tooltiptext">ID: wrenchhardened</span></td>
+                    <td>Одноручный</td>
+                    <td>0,5м</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>2</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/Blunt_Force_Trauma.png" width="40px">Тупая травма (8)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (0,3)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Radiation_Sickness.png" width="40px">Лучевая болезнь (1)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="gun_img3 tooltip"><img src="img/Screwdriver.png" height="40px" width="auto"><br><br>Отвертка<span class="tooltiptext">ID: screwdriver</span></td>
+                    <td>Одноручный</td>
+                    <td>0,5м</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>2</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/Lacerations.png" width="40px">Рваная рана (5)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/krovotecheniye.png" width="40px">Кровотечение (2)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (0,05)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="gun_img3 tooltip"><img src="img/Hardened_Screwdriver.png" height="40px" width="auto"><br><br>Закаленная отвертка<span class="tooltiptext">ID: screwdriverhardened</span></td>
+                    <td>Одноручный</td>
+                    <td>0,5м</td>
+                    <td>1</td>
+                    <td>-</td>
+                    <td>2</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/Lacerations.png" width="40px">Рваная рана (7)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/krovotecheniye.png" width="40px">Кровотечение (2)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (0,08)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Radiation_Sickness.png" width="40px">Лучевая болезнь (1)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="img_7 tooltip"><img src="img/Spineling's_Spike.png"><br><br>Игла шипостая<span class="tooltiptext"><br>ID: N/A</span></td>
+                    <td>Одноручный</td>
+                    <td>0,5м</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><img src="img/Lacerations.png" width="40px">Рваная рана (5)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/krovotecheniye.png" width="40px">Кровотечение (10)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/ogluheniye.png" width="40px">Оглушение (0,2)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+        </section>
     </main>
     <button id="scrollTopBtn" title="Наверх">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
