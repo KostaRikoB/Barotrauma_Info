@@ -394,7 +394,7 @@ input{
   position: absolute;
   z-index: 100;
   bottom: 80%; /* позиция над элементом */
-  left: 55%;
+  left: 50%;
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.3s;
@@ -431,6 +431,32 @@ input{
 }
 
 .tooltip:hover .tooltiptext2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .tooltiptext3 {
+  visibility: hidden;
+  width: max-content;
+  background-color: #161c3d;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 100;
+  bottom: 80%; /* позиция над элементом */
+  left: 55%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.85rem;
+  border: 1px solid #555;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  white-space: nowrap;
+}
+
+.tooltip:hover .tooltiptext3 {
   visibility: visible;
   opacity: 1;
 }
