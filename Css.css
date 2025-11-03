@@ -381,10 +381,10 @@ input{
   transform: scale(1.2);
 }
 .tooltip {
-  position: relative;              /* контекст для подсказки */
-  display: table-cell;             /* ведёт себя как обычная ячейка таблицы */
-  vertical-align: middle;          /* выравнивание содержимого по центру */
-  text-align: center;              /* выравнивание текста и картинки */
+  position: relative;              
+  display: table-cell;             
+  vertical-align: middle;          
+  text-align: center;             
 }
 
 .tooltip .tooltiptext {
@@ -497,4 +497,75 @@ input{
 .tooltip2:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+.craft-cell {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+.recipe-btn {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.recipe-btn:hover {
+  color: #aaa;
+}
+
+.recipe-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(20, 20, 40, 0.95);
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 10;
+  text-align: center;
+
+  display: none;
+}
+
+
+.recipe-popup.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;     
+}
+
+.recipe-popup p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: #ccc;
+}
+
+.no-tooltip .tooltiptext {
+  display: none !important;
 }
