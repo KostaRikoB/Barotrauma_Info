@@ -667,7 +667,16 @@
                 </tr>
 
                 <tr>
-                    <td class="gun_img tooltip"><img src="img/Stun_Gun_sprite.png"></br></br>Электрошокер<span class="tooltiptext">ID: stungun</span></td>
+                    <td class="gun_img tooltip craft-cell"><img src="img/Stun_Gun_sprite.png"></br></br>Электрошокер<span class="tooltiptext">ID: stungun</span>
+                    <div class="recipe-btn" onclick="toggleRecipe(this)">Рецепт</div>
+
+                    <div class="recipe-popup">
+                        <span class="close-btn" onclick="toggleRecipe(this)">✖</span>
+                        <p><img src="img/Iron.png" width="20"> 2 Железо</p>
+                        <p><img src="img/Wire.png" width="20"> 1 Провод</p>
+                        <p><img src="img/BatteryCell.png" width="20"> 1 Батарея</p>
+                    </div>
+                    </td>
                     <td>одноручный</td>
                     <td>1</td>
                     <td>1</td>
@@ -1029,7 +1038,7 @@
                 </tr>
 
                 <tr>
-                    <td class="gun_img3 tooltip"><img src="img/Boarding_Axe.png"><br><br>Абордажный топор<span class="tooltiptext">ID: boardingaxe</span></td>
+                    <td class="gun_img3 tooltip"><img src="img/Boarding_Axe.png"><br><br>Абордажный топор<span class="tooltiptext">Имеет шанс отрубании конечностей 750%,<br> полезно чтобы удостовериться в смерти хаска.<br>ID: boardingaxe</span></td>
                     <td>Двуручный</td>
                     <td>1,55м</td>
                     <td>0,83</td>
@@ -1287,6 +1296,18 @@
         document.getElementById("scrollTopBtn").onclick = function() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         };
+
+    
+    </script>
+    <script>
+    function toggleRecipe(el) {
+  const cell = el.closest('.craft-cell');
+  const popup = cell.querySelector('.recipe-popup');
+  const isActive = popup.classList.contains('active');
+  
+  popup.classList.toggle('active', !isActive);
+  cell.classList.toggle('no-tooltip', !isActive);
+}
     </script>
     </body>
     </html>
