@@ -544,6 +544,10 @@ input{
   justify-content: center; 
   align-items: center;     
 }
+.recipe-popup img{
+  width: 30px;
+  height: auto;
+}
 
 .recipe-popup p {
   margin: 5px 0;
