@@ -1,4 +1,6 @@
-
+* {
+  box-sizing: border-box;
+}
 body::before {
   content: "";
   position: fixed;
@@ -74,6 +76,8 @@ body {
   
   .header a{
     color: white;
+    border: 1px solid #252839;
+    border-radius: 8px;
     text-decoration: none;
     padding: 0.5rem 1rem;
     margin-top: 0.5rem;
@@ -82,6 +86,7 @@ body {
   }
   .header a:hover{
     background-color: #161c3d;
+    border: 1px solid white;
   }
   .header-inner {
     display: flex;
@@ -148,6 +153,8 @@ body {
 
   .nav a {
   color: white;
+  border: 1px solid #252839;
+  border-radius: 8px;
   text-decoration: none;
   display: inline-block;
   padding: 0.3rem 0.6rem;
@@ -158,6 +165,7 @@ body {
   
   .nav a:hover {
     background-color: #161c3d;
+    border: 1px solid white;
   }
   
 .nav img{
@@ -386,6 +394,12 @@ input{
   vertical-align: middle;          
   text-align: center;             
 }
+.tooltip3 {
+  position: relative;              
+  display: inline-block;             
+  vertical-align: middle;          
+  text-align: center;             
+}
 
 .tooltip .tooltiptext {
   visibility: hidden;
@@ -406,6 +420,7 @@ input{
   border: 1px solid #555;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   white-space: nowrap;
+  pointer-events: none;
 }
 
 .tooltip:hover .tooltiptext {
@@ -432,6 +447,7 @@ input{
   border: 1px solid #555;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   white-space: nowrap;
+  pointer-events: none;
 }
 
 .tooltip:hover .tooltiptext2 {
@@ -458,9 +474,38 @@ input{
   border: 1px solid #555;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   white-space: nowrap;
+  pointer-events: none;
 }
 
 .tooltip:hover .tooltiptext3 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip3 .tooltiptext4 {
+  visibility: hidden;
+  width: max-content;
+  background-color: #161c3d;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 100;
+  bottom: 100%; /* позиция над элементом */
+  left: 50%;
+  white-space: normal;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.85rem;
+  border: 1px solid #555;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.tooltip3:hover .tooltiptext4 {
   visibility: visible;
   opacity: 1;
 }
@@ -572,4 +617,64 @@ input{
 
 .no-tooltip .tooltiptext {
   display: none !important;
+}
+
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #242b50; /* общий фон таблицы */
+  color: white;
+  table-layout: fixed;
+}
+
+.skills-table th {
+  background-color: #161c3d;
+  border: 1px solid rgb(150, 148, 148);
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.skills-table td {
+  border: 1px solid rgb(150, 148, 148);
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.skill-row {
+  display: flex;
+  justify-content: space-evenly; /* равномерное распределение иконок */
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-row img {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+
+.skill-row img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.skill-row2 {
+  display: flex;
+  justify-content: center; /* равномерное распределение иконок */
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-row2 img {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+
+.skill-row2 img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
