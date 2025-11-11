@@ -252,8 +252,8 @@ tr:hover {
   background-color: #252839;
 }
 
-.positive { color: #00cc66; }
-.negative { color: #ff3333; }
+.positive { color: #71b671; } /*#ff3333*/
+.negative { color: #f56969; }
 .neutral  { color: #aaa; }
 
 button{
