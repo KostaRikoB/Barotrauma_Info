@@ -252,7 +252,7 @@ tr:hover {
   background-color: #252839;
 }
 
-.positive { color: #71b671; } /*#ff3333*/
+.positive { color: #71b671; }
 .negative { color: #f56969; }
 .neutral  { color: #aaa; }
 
@@ -678,3 +678,4 @@ input{
   transform: scale(1.1);
   cursor: pointer;
 }
+
